@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="start|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="Url to prerender and load" />
+    <EditText android:id="@id/url_to_load" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textUri" />
+    <Button android:id="@id/preload_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="Preload url" />
+    <Button android:id="@id/load_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="Load url" />
+</LinearLayout>

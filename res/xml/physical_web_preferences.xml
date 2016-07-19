@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <org.chromium.chrome.browser.preferences.ChromeSwitchPreference android:key="physical_web_switch" android:summaryOn="@string/text_on" android:summaryOff="@string/text_off" chrome:drawDivider="true" />
+    <org.chromium.chrome.browser.preferences.TextMessagePreference android:title="@string/physical_web_pref_description" />
+    <org.chromium.chrome.browser.preferences.LearnMorePreference android:key="physical_web_learn_more" chrome:helpContext="@string/help_context_physical_web" />
+    <org.chromium.chrome.browser.preferences.ButtonPreference android:title="@string/physical_web_launch_button" android:key="physical_web_launch" />
+</PreferenceScreen>

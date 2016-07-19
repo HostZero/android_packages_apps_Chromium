@@ -1,0 +1,88 @@
+.class Lorg/chromium/mojo/bindings/RouterImpl$ResponderThunk;
+.super Ljava/lang/Object;
+.source "RouterImpl.java"
+
+# interfaces
+.implements Lorg/chromium/mojo/bindings/MessageReceiver;
+
+
+# instance fields
+.field private mAcceptWasInvoked:Z
+
+.field final synthetic this$0:Lorg/chromium/mojo/bindings/RouterImpl;
+
+
+# direct methods
+.method constructor <init>(Lorg/chromium/mojo/bindings/RouterImpl;)V
+    .locals 1
+
+    .prologue
+    .line 47
+    iput-object p1, p0, Lorg/chromium/mojo/bindings/RouterImpl$ResponderThunk;->this$0:Lorg/chromium/mojo/bindings/RouterImpl;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 48
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lorg/chromium/mojo/bindings/RouterImpl$ResponderThunk;->mAcceptWasInvoked:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public accept(Lorg/chromium/mojo/bindings/Message;)Z
+    .locals 1
+
+    .prologue
+    .line 56
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lorg/chromium/mojo/bindings/RouterImpl$ResponderThunk;->mAcceptWasInvoked:Z
+
+    .line 57
+    iget-object v0, p0, Lorg/chromium/mojo/bindings/RouterImpl$ResponderThunk;->this$0:Lorg/chromium/mojo/bindings/RouterImpl;
+
+    invoke-virtual {v0, p1}, Lorg/chromium/mojo/bindings/RouterImpl;->accept(Lorg/chromium/mojo/bindings/Message;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public close()V
+    .locals 1
+
+    .prologue
+    .line 65
+    iget-object v0, p0, Lorg/chromium/mojo/bindings/RouterImpl$ResponderThunk;->this$0:Lorg/chromium/mojo/bindings/RouterImpl;
+
+    invoke-virtual {v0}, Lorg/chromium/mojo/bindings/RouterImpl;->close()V
+
+    .line 66
+    return-void
+.end method
+
+.method protected finalize()V
+    .locals 1
+
+    .prologue
+    .line 70
+    iget-boolean v0, p0, Lorg/chromium/mojo/bindings/RouterImpl$ResponderThunk;->mAcceptWasInvoked:Z
+
+    if-nez v0, :cond_0
+
+    .line 74
+    iget-object v0, p0, Lorg/chromium/mojo/bindings/RouterImpl$ResponderThunk;->this$0:Lorg/chromium/mojo/bindings/RouterImpl;
+
+    # invokes: Lorg/chromium/mojo/bindings/RouterImpl;->closeOnHandleThread()V
+    invoke-static {v0}, Lorg/chromium/mojo/bindings/RouterImpl;->access$200(Lorg/chromium/mojo/bindings/RouterImpl;)V
+
+    .line 76
+    :cond_0
+    invoke-super {p0}, Ljava/lang/Object;->finalize()V
+
+    .line 77
+    return-void
+.end method

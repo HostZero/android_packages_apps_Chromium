@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <View android:background="@drawable/bookmark_title_bar_shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginBottom="-4.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+            <org.chromium.chrome.browser.widget.FloatLabelLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip">
+                <org.chromium.chrome.browser.widget.EmptyAlertEditText android:id="@id/title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/bookmark_name" android:singleLine="true" android:inputType="textAutoCorrect|textCapSentences" android:imeOptions="flagNoExtractUi" chrome:alertMessage="@string/bookmark_missing_title" />
+            </org.chromium.chrome.browser.widget.FloatLabelLayout>
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/bookmark_folder" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" />
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/dark_mode_tint" android:id="@id/folder_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" />
+            <org.chromium.chrome.browser.widget.FloatLabelLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+                <org.chromium.chrome.browser.widget.EmptyAlertEditText android:id="@id/url_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/bookmark_url" android:singleLine="true" android:inputType="textUri" android:imeOptions="flagNoExtractUi" chrome:alertMessage="@string/bookmark_missing_url" />
+            </org.chromium.chrome.browser.widget.FloatLabelLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/offline_page_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textSize="15.0sp" android:textColor="@color/dark_mode_tint" android:layout_gravity="center_vertical" android:id="@id/offline_page_info_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/bookmark_offline_page_none" android:layout_weight="1.0" android:textAlignment="viewStart" android:layout_marginStart="3.0dip" />
+                <Button android:textSize="15.0sp" android:textColor="@color/light_active_color" android:layout_gravity="center_vertical" android:id="@id/offline_page_save_remove_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/ButtonCompatBorderless" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

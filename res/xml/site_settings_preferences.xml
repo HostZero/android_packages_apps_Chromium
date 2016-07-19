@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:icon="@drawable/settings_all_sites" android:title="@string/all_sites" android:key="all_sites" android:fragment="org.chromium.chrome.browser.preferences.website.SingleCategoryPreferences" />
+    <Preference android:key="cookies" android:fragment="org.chromium.chrome.browser.preferences.website.SingleCategoryPreferences" />
+    <Preference android:key="device_location" android:fragment="org.chromium.chrome.browser.preferences.website.SingleCategoryPreferences" />
+    <Preference android:key="camera" android:fragment="org.chromium.chrome.browser.preferences.website.SingleCategoryPreferences" />
+    <Preference android:key="microphone" android:fragment="org.chromium.chrome.browser.preferences.website.SingleCategoryPreferences" />
+    <Preference android:key="javascript" android:fragment="org.chromium.chrome.browser.preferences.website.SingleCategoryPreferences" />
+    <Preference android:key="popups" android:fragment="org.chromium.chrome.browser.preferences.website.SingleCategoryPreferences" />
+    <Preference android:key="fullscreen" android:fragment="org.chromium.chrome.browser.preferences.website.SingleCategoryPreferences" />
+    <Preference android:key="notifications" android:fragment="org.chromium.chrome.browser.preferences.website.SingleCategoryPreferences" />
+    <Preference android:key="protected_content" android:fragment="org.chromium.chrome.browser.preferences.website.SingleCategoryPreferences" />
+    <Preference android:icon="@drawable/settings_language" android:title="@string/language" android:key="language" android:fragment="org.chromium.chrome.browser.preferences.website.LanguagePreferences" />
+    <Preference android:icon="@drawable/settings_storage" android:title="@string/website_settings_storage" android:key="use_storage" android:fragment="org.chromium.chrome.browser.preferences.website.SingleCategoryPreferences" />
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.bookmarks.BookmarkContentView android:id="@id/bookmark_content_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.chromium.chrome.browser.bookmarks.BookmarkRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/bookmark_items_container" android:background="@android:color/white" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/bookmark_action_bar" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff5b5b5b" android:gravity="center" android:id="@id/bookmark_empty_view" android:padding="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/bookmark_logo_large" android:drawablePadding="3.0dip" android:layout_centerInParent="true" />
+    <org.chromium.chrome.browser.widget.LoadingView android:id="@id/bookmark_initial_loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <org.chromium.chrome.browser.bookmarks.BookmarkActionBar android:id="@id/bookmark_action_bar" android:background="@color/bookmark_appbar_background" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentTop="true">
+        <org.chromium.chrome.browser.widget.NumberRollView android:id="@id/selection_mode_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </org.chromium.chrome.browser.widget.NumberRollView>
+    </org.chromium.chrome.browser.bookmarks.BookmarkActionBar>
+    <org.chromium.chrome.browser.widget.FadingShadowView android:id="@id/shadow" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/bookmark_action_bar" />
+</org.chromium.chrome.browser.bookmarks.BookmarkContentView>

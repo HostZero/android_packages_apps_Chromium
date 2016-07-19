@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:paddingTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="16.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="#de000000" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/radio_button" />
+    <TextView android:textSize="14.0sp" android:textColor="#8a000000" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title" android:layout_alignStart="@id/title" />
+</merge>

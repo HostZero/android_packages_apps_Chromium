@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bookmark_row" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bookmark_image" android:layout_width="64.0dip" android:layout_height="fill_parent" android:scaleType="center" android:contentDescription="@null" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/default_text_color" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:textAlignment="viewStart" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/secondary_text_default_material_light" android:id="@id/offline_page_size" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:textAlignment="viewStart" />
+        </LinearLayout>
+        <org.chromium.chrome.browser.widget.TintedImageButton android:id="@id/more" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_menu" android:contentDescription="@string/accessibility_bookmark_more_info" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" chrome:tint="@color/dark_mode_tint" />
+    </LinearLayout>
+    <org.chromium.chrome.browser.bookmarks.BookmarkItemHighlightView android:id="@id/highlight" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <org.chromium.chrome.browser.preferences.ChromeSwitchPreference android:key="homepage_switch" android:summaryOn="@string/text_on" android:summaryOff="@string/text_off" />
+    <Preference android:title="@string/options_homepage_edit_label" android:key="homepage_edit" android:fragment="org.chromium.chrome.browser.preferences.HomepageEditor" />
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/default_text_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bookmark_sign_in_promo_title" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/default_text_color" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/bookmark_sign_in_promo_description" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <Button android:textSize="15.0sp" android:textColor="@color/light_active_color" android:id="@id/no_thanks" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bookmark_sign_in_promo_no_thanks" android:textAllCaps="true" style="@style/ButtonCompatBorderless" />
+        <org.chromium.ui.widget.ButtonCompat android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/sign_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bookmark_sign_in_promo_sign_in" android:textAllCaps="true" chrome:buttonColor="@color/light_active_color" />
+    </LinearLayout>
+</LinearLayout>

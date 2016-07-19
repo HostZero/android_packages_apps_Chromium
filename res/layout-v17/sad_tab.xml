@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.tab.SadTabView android:scrollbarStyle="outsideOverlay" android:background="#fff7f7f7" android:paddingTop="24.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:paddingStart="24.0dip" android:paddingEnd="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="start" android:id="@id/sad_tab_image" android:paddingBottom="26.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sad_tab" android:contentDescription="@null" />
+        <TextView android:textSize="23.0sp" android:textColor="@color/sad_tab_header_text_color" android:layout_gravity="start" android:id="@id/sad_tab_title" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sad_tab_title" android:lineSpacingMultiplier="1.4" />
+        <org.chromium.ui.widget.TextViewWithClickableSpans android:textSize="14.0sp" android:textColor="@color/sad_tab_body_text_color" android:layout_gravity="start" android:id="@id/sad_tab_message" android:paddingBottom="22.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.chromium.ui.widget.ButtonCompat android:textColor="#ffffffff" android:layout_gravity="end" android:id="@id/sad_tab_reload_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="222.0dip" android:text="@string/sad_tab_reload_label" chrome:buttonColor="@color/light_active_color" />
+    </LinearLayout>
+</org.chromium.chrome.browser.tab.SadTabView>

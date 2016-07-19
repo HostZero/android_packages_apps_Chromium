@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="25.0dip" android:bottom="0.0px">
+        <nine-patch android:src="@drawable/toolbar_background" />
+    </item>
+</layer-list>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="start|center" android:id="@id/location_bar_icon" android:layout_width="@dimen/location_bar_icon_width" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/navigation_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_omnibox_page" android:scaleType="center" android:contentDescription="@string/accessibility_toolbar_btn_site_info" style="@style/LocationBarButton" />
+        <ImageButton android:layout_gravity="center" android:id="@id/security_button" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:contentDescription="@string/accessibility_toolbar_btn_site_info" android:alpha="0.0" style="@style/LocationBarButton" />
+    </FrameLayout>
+    <include layout="@layout/location_bar_status" />
+    <include android:layout_gravity="center_vertical" android:id="@id/url_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/location_bar_icon_width" android:layout_marginTop="3.0dip" android:layout_marginRight="80.0dip" android:layout_marginBottom="3.0dip" android:nextFocusForward="@id/menu_button" layout="@layout/url_container" />
+    <org.chromium.chrome.browser.widget.TintedImageButton android:layout_gravity="end" android:id="@id/delete_button" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginRight="44.0dip" android:src="@drawable/btn_delete_url" android:scaleType="center" android:contentDescription="@string/accessibility_toolbar_btn_delete_url" style="@style/LocationBarButton" />
+    <org.chromium.chrome.browser.widget.TintedImageButton android:layout_gravity="end" android:id="@id/bookmark_button" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginRight="40.0dip" android:scaleType="center" android:contentDescription="@string/accessibility_menu_bookmark" style="@style/LocationBarButton" />
+    <org.chromium.chrome.browser.widget.TintedImageButton android:layout_gravity="end" android:id="@id/mic_button" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_mic" android:scaleType="center" android:contentDescription="@string/accessibility_toolbar_btn_mic" android:nextFocusForward="@id/menu_button" style="@style/LocationBarButton" />
+</merge>

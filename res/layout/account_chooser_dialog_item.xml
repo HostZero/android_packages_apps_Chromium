@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/account_chooser_dialog_item_margin" android:paddingRight="@dimen/account_chooser_dialog_item_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/profile_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:contentDescription="@null" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_marginLeft="16.0dip">
+        <TextView android:textSize="@dimen/account_chooser_dialog_title_main_text_size" android:textColor="@color/default_text_color" android:ellipsize="end" android:id="@id/main_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sans-serif" />
+        <TextView android:textSize="@dimen/account_chooser_dialog_title_descriptive_text_size" android:textColor="@color/descriptive_text_color" android:ellipsize="end" android:id="@id/secondary_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sans-serif" />
+    </LinearLayout>
+</LinearLayout>

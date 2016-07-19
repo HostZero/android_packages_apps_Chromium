@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="57.0dip" android:fillViewport="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="140.0dip" android:layout_height="140.0dip" android:src="@drawable/physical_web_logo" android:contentDescription="@null" />
+            <TextView android:textSize="24.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/physical_web_optin_title" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/light_normal_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/physical_web_optin_description" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_gravity="bottom" android:layout_marginBottom="56.0dip" style="@style/ButtonBarTopDivider" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <Button android:textSize="14.0sp" android:textColor="@color/light_normal_color" android:gravity="start|center" android:id="@id/physical_web_decline" android:background="?listChoiceBackgroundIndicator" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/no_thanks" android:layout_weight="1.0" android:textAllCaps="true" />
+        <Button android:textSize="14.0sp" android:textColor="@color/light_active_color" android:gravity="end|center" android:id="@id/physical_web_enable" android:background="?listChoiceBackgroundIndicator" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/enable" android:layout_weight="1.0" android:textAllCaps="true" />
+    </LinearLayout>
+</merge>

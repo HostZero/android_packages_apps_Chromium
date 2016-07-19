@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/thumb" android:background="@drawable/border_thumb_bookmarks_widget_holo" android:layout_width="fill_parent" android:layout_height="@dimen/widget_thumbnail_height" android:src="@drawable/thumbnail_bookmarks_widget_no_bookmark_holo" android:scaleType="fitEnd" android:cropToPadding="true" android:contentDescription="@null" />
+    <LinearLayout android:background="@drawable/overlay_url_bookmark_widget_holo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_alignBottom="@id/thumb" android:layout_marginStart="2.0dip" android:layout_marginEnd="2.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/favicon" android:layout_width="@dimen/widget_favicon_size" android:layout_height="@dimen/widget_favicon_size" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/globe_incognito_favicon" android:scaleType="centerInside" android:contentDescription="@null" android:layout_marginStart="4.0dip" android:layout_marginEnd="8.0dip" />
+        <TextView android:textSize="12.0sp" android:typeface="sans" android:textColor="@android:color/black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

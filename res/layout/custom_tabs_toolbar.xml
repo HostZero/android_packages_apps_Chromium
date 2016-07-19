@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.toolbar.CustomTabToolbar
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:layout_gravity="start|center" android:id="@id/close_button" android:contentDescription="@string/close_tab" style="@style/ToolbarButton" />
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/location_bar_frame_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/security_button" android:visibility="gone" android:layout_width="@dimen/location_bar_icon_width" android:layout_height="fill_parent" android:scaleType="center" android:contentDescription="@string/accessibility_toolbar_btn_site_info" style="@style/LocationBarButton" />
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/title_url_container" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/custom_tabs_title_text_size" android:ellipsize="end" android:layout_gravity="top" android:id="@id/title_bar" android:background="@null" android:paddingRight="@dimen/toolbar_edge_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/custom_tabs_toolbar_vertical_padding" android:maxLines="1" android:inputType="none" />
+            <org.chromium.chrome.browser.omnibox.UrlBar android:textSize="@dimen/location_bar_url_text_size" android:layout_gravity="bottom" android:id="@id/url_bar" android:background="@null" android:paddingRight="@dimen/toolbar_edge_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:inputType="none" />
+        </FrameLayout>
+    </FrameLayout>
+    <ImageButton android:layout_gravity="end|center" android:id="@id/action_button" android:paddingTop="@dimen/custom_tabs_toolbar_vertical_padding" android:paddingBottom="@dimen/custom_tabs_toolbar_vertical_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginRight="42.0dip" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxWidth="@dimen/custom_tabs_toolbar_maxWidth" android:contentDescription="@null" style="@style/ToolbarButton" />
+    <org.chromium.chrome.browser.widget.TintedImageButton android:layout_gravity="end|center" android:id="@id/menu_button" android:background="@null" android:paddingRight="4.0dip" android:layout_width="42.0dip" android:src="@drawable/btn_menu" android:contentDescription="@string/accessibility_toolbar_btn_menu" style="@style/ToolbarButton" />
+    <org.chromium.chrome.browser.widget.ToolbarProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="2.0dip" chrome:progressBarColor="@color/progress_bar_foreground" chrome:backgroundColor="@color/progress_bar_background" />
+</org.chromium.chrome.browser.toolbar.CustomTabToolbar>

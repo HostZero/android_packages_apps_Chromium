@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.toolbar.ToolbarControlContainer android:id="@id/control_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/custom_tabs_control_container_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/toolbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" class="org.chromium.chrome.browser.toolbar.ToolbarControlContainer$ToolbarViewResourceFrameLayout">
+        <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/custom_tabs_control_container_height" layout="@layout/custom_tabs_toolbar" />
+        <ImageView android:id="@id/toolbar_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/custom_tabs_control_container_height" android:src="@drawable/toolbar_shadow" android:scaleType="fitXY" android:contentDescription="@null" />
+        <ViewStub android:id="@id/find_toolbar_stub" android:visibility="gone" android:layout="@layout/find_toolbar" android:inflatedId="@id/find_toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/custom_tabs_control_container_height" android:layout_marginTop="@dimen/tab_strip_height" />
+        <ViewStub android:layout_gravity="end|center|top" android:id="@id/find_toolbar_tablet_stub" android:layout="@layout/find_toolbar" android:inflatedId="@id/find_toolbar" android:layout_width="@dimen/find_in_page_popup_width" android:layout_height="@dimen/find_in_page_popup_height" android:layout_marginRight="@dimen/find_in_page_popup_margin_end" />
+    </view>
+</org.chromium.chrome.browser.toolbar.ToolbarControlContainer>

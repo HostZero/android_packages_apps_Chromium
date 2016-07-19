@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:orderingFromXml="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/account_management_title" android:order="0" />
+    <org.chromium.chrome.browser.preferences.ChromeBasePreference android:icon="@drawable/add_circle_blue" android:key="add_account" android:order="1000" />
+    <PreferenceCategory android:title="@string/account_management_parental_settings" android:key="parental_settings" android:order="1001" />
+    <Preference android:key="parent_accounts" android:order="1002" />
+    <Preference android:title="@string/account_management_child_content_title" android:key="child_content" android:order="1003" />
+    <Preference android:title="@string/account_management_child_safe_sites_title" android:key="child_safe_sites" android:order="1004" />
+    <org.chromium.chrome.browser.preferences.SyncPreference android:title="@string/sign_in_sync" android:key="sync_settings" android:order="1005" />
+    <Preference android:title="@string/account_management_sign_out" android:key="sign_out" android:order="1006" />
+</PreferenceScreen>

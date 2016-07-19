@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <org.chromium.chrome.browser.widget.FloatLabelLayout android:id="@id/homepage_url" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PreferenceScreenLayout">
+            <EditText android:id="@id/homepage_url_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/options_homepage_edit_label" android:singleLine="true" android:inputType="textUri" />
+        </org.chromium.chrome.browser.widget.FloatLabelLayout>
+        <Space style="@style/ButtonBarTopSpacer" />
+        <View style="@style/ButtonBarTopDivider" />
+        <LinearLayout style="@style/ButtonBar">
+            <Button android:id="@id/homepage_reset" android:text="@string/reset" style="@style/ButtonBarButton" />
+            <Button android:id="@id/homepage_cancel" android:text="@string/cancel" style="@style/ButtonBarButton" />
+            <Button android:id="@id/homepage_save" android:text="@string/save" style="@style/ButtonBarButton" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

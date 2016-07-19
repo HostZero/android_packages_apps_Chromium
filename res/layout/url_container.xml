@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.omnibox.UrlContainer android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.chromium.chrome.browser.omnibox.UrlBar android:textSize="@dimen/location_bar_url_text_size" android:gravity="center_vertical" android:id="@id/url_bar" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search_or_type_url" android:singleLine="true" android:inputType="textUri" android:imeOptions="actionGo|flagNoExtractUi|flagNoFullscreen" />
+    <org.chromium.chrome.browser.omnibox.TrailingTextView android:textSize="@dimen/location_bar_url_text_size" android:textColor="@color/url_emphasis_non_emphasized_text" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/trailing_text" android:background="@null" android:visibility="gone" android:fadingEdge="horizontal" android:fadingEdgeLength="15.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" android:singleLine="true" android:contentDescription="@null" />
+</org.chromium.chrome.browser.omnibox.UrlContainer>

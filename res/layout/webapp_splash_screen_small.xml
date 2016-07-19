@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/webapp_splash_screen_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/webapp_splash_offset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/webapp_splash_screen_icon" android:layout_width="@dimen/webapp_splash_small_image_size" android:layout_height="@dimen/webapp_splash_small_image_size" android:scaleType="center" android:layout_centerInParent="true" android:contentDescription="@null" />
+    <TextView android:id="@id/webapp_splash_screen_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/webapp_splash_small_title_margin_top" android:layout_below="@id/webapp_splash_screen_icon" android:layout_centerHorizontal="true" style="@style/WebappSplashScreenTextTheme" />
+</RelativeLayout>

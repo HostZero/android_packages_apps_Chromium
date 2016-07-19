@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.ntp.IncognitoNewTabPageView android:id="@id/ntp_content" android:paddingTop="@dimen/tab_strip_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <org.chromium.chrome.browser.ntp.NewTabScrollView android:id="@id/ntp_scrollview" android:background="@color/ntp_bg_incognito" android:paddingTop="@dimen/toolbar_height_no_shadow" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdgeLength="9.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false" android:contentDescription="@string/accessibility_new_incognito_tab_page" android:requiresFadingEdge="vertical">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="24.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="32.0dip" android:paddingEnd="32.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="19.0dip" android:src="@drawable/incognito_splash" android:contentDescription="@null" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffd2d2d2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_tab_incognito_header" android:fontFamily="sans-serif-light" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffbdbdbd" android:id="@id/new_tab_incognito_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="10.0dip" android:maxWidth="660.0dip" android:text="@null" android:singleLine="false" android:lineSpacingMultiplier="1.2" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff03a9f4" android:id="@id/learn_more" android:background="?listChoiceBackgroundIndicator" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/learn_more" android:textAllCaps="true" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+    </org.chromium.chrome.browser.ntp.NewTabScrollView>
+</org.chromium.chrome.browser.ntp.IncognitoNewTabPageView>

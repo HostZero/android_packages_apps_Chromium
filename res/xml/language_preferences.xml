@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference android:title="@string/google_translate" android:key="translate_checkbox" android:summary="@string/translate_prefs_description" />
+    <org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference android:title="@string/auto_detect_encoding" android:key="auto_detect_encoding_checkbox" android:summary="@string/auto_detect_encoding_description" />
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/nearby_urls_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="4.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@null" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/physical_web_header_color" android:ellipsize="end" android:id="@id/nearby_urls_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/physical_web_url_color" android:ellipsize="end" android:id="@id/nearby_urls_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_below="@id/nearby_urls_title" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/physical_web_url_description_color" android:ellipsize="end" android:id="@id/nearby_urls_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="12.0dip" android:lines="2" android:layout_below="@id/nearby_urls_url" android:layout_alignParentLeft="true" android:lineSpacingExtra="1.5dip" />
+</RelativeLayout>

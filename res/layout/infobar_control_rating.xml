@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RatingBar android:id="@id/control_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="16.0dip" android:progressDrawable="@drawable/rating_bar" android:minHeight="16.0dip" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" android:importantForAccessibility="no" />
+</FrameLayout>

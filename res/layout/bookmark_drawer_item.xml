@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.bookmarks.BookmarkDrawerListItemView android:textColor="@color/bookmark_drawer_text_color" android:background="@drawable/bookmark_drawer_item_background" style="@style/BookmarkDrawerItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

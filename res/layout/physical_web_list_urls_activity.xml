@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.physicalweb.SwipeRefreshWidget android:id="@id/physical_web_swipe_refresh_widget" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/physical_web_urls_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+        <RelativeLayout android:id="@id/physical_web_empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:textColor="@color/light_normal_color" android:id="@id/physical_web_empty_list_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/physical_web_empty_list_scanning" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/physical_web_logo" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/physical_web_logo" android:layout_above="@id/physical_web_empty_list_text" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/physical_web_bottom_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <org.chromium.chrome.browser.widget.FadingShadowView android:id="@id/physical_web_bottom_bar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/infobar_shadow_height" />
+            <LinearLayout android:gravity="top" android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/infobar_big_icon_size" android:layout_height="@dimen/infobar_big_icon_size" android:layout_marginLeft="@dimen/infobar_padding" android:layout_marginTop="@dimen/infobar_padding" android:layout_marginRight="@dimen/infobar_big_icon_margin" android:layout_marginBottom="@dimen/infobar_padding" android:src="@drawable/physical_web_notification_large" android:layout_weight="0.0" android:contentDescription="@null" />
+                <TextView android:textSize="@dimen/infobar_text_size" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/infobar_padding" android:text="@string/physical_web_bottom_bar" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/physical_web_bottom_bar_close" android:background="?selectableItemBackground" android:padding="@dimen/infobar_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_close" android:layout_weight="0.0" android:contentDescription="@string/close" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</org.chromium.chrome.browser.physicalweb.SwipeRefreshWidget>

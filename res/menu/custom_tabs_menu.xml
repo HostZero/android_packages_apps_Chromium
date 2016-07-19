@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/icon_row_menu_id" android:orderInCategory="0" android:title="@null">
+        <menu>
+            <item android:icon="@drawable/btn_forward" android:id="@id/forward_menu_id" android:title="@string/accessibility_menu_forward" />
+            <item android:icon="@drawable/btn_star" android:id="@id/bookmark_this_page_id" android:title="@string/accessibility_menu_bookmark" />
+            <item android:icon="@drawable/btn_info" android:id="@id/info_menu_id" android:title="@string/accessibility_menu_info" />
+            <item android:icon="@drawable/btn_reload_stop" android:id="@id/reload_menu_id" android:title="@string/accessibility_btn_refresh" />
+        </menu>
+    </item>
+    <item android:id="@id/share_menu_id" android:orderInCategory="2" android:title="@string/menu_share_page" />
+    <item android:id="@id/find_in_page_id" android:orderInCategory="2" android:title="@string/menu_find_in_page" />
+    <item android:id="@id/open_in_browser_id" android:orderInCategory="2" android:title="" />
+</menu>

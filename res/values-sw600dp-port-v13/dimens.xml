@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget_thumbnail_height">84.0dip</dimen>
+    <dimen name="widget_column_width">110.0dip</dimen>
+</resources>

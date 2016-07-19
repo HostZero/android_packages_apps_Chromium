@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/bookmark_minimum_dialog_size_tablet"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <View android:background="@drawable/bookmark_title_bar_shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginBottom="-4.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <org.chromium.chrome.browser.widget.EmptyAlertEditText android:textSize="24.0sp" android:id="@id/folder_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="12.0dip" android:hint="@string/title" android:inputType="textAutoCorrect|textCapSentences" android:imeOptions="flagNoExtractUi" chrome:alertMessage="@string/bookmark_missing_title" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/bookmark_detail_section" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:text="@string/bookmark_parent_folder" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/dark_mode_tint" android:id="@id/parent_folder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="32.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

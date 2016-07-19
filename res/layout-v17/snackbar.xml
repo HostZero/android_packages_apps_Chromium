@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="start|bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/snackbar_min_height" android:layout_marginStart="@dimen/snackbar_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/snackbar_profile_image" android:visibility="visible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitCenter" android:contentDescription="@null" android:layout_marginStart="12.0dip" android:layout_marginEnd="-12.0dip" />
+    <org.chromium.chrome.browser.snackbar.TemplatePreservingTextView android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_gravity="start|center" android:id="@id/snackbar_message" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0" android:textAlignment="viewStart" android:layout_marginStart="24.0dip" />
+    <Button android:textSize="14.0sp" android:textColor="@color/snackbar_button_color" android:layout_gravity="center_vertical" android:id="@id/snackbar_button" android:layout_width="wrap_content" android:layout_height="@dimen/snackbar_min_height" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" style="@style/ButtonCompatBorderless" />
+</LinearLayout>

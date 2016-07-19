@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="28.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:id="@id/text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <org.chromium.ui.widget.ButtonCompat android:textColor="#ffffffff" android:id="@id/enable_sync_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/ntp_recent_tabs_sync_enable_sync_button" chrome:buttonColor="@color/light_active_color" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@android:style/Theme.Holo.Light"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:textSize="16.0sp" android:textColor="@color/find_in_page_query_color" android:layout_gravity="center_vertical" android:id="@id/find_query" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:hint="@string/hint_find_in_page" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionSearch|flagNoExtractUi" class="org.chromium.chrome.browser.widget.findinpage.FindToolbar$FindQuery" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/find_in_page_results_status_color" android:id="@id/find_status" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="16.0dip" android:singleLine="true" />
+    <View android:id="@id/find_separator" android:background="#ff000000" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:alpha="0.1" />
+    <org.chromium.chrome.browser.widget.TintedImageButton android:id="@id/find_prev_button" android:layout_height="fill_parent" android:src="@drawable/ic_collapsed" android:contentDescription="@string/accessibility_find_toolbar_btn_prev" style="@style/ToolbarButton" />
+    <org.chromium.chrome.browser.widget.TintedImageButton android:id="@id/find_next_button" android:layout_height="fill_parent" android:src="@drawable/ic_expanded" android:contentDescription="@string/accessibility_find_toolbar_btn_next" style="@style/ToolbarButton" />
+    <org.chromium.chrome.browser.widget.TintedImageButton android:id="@id/close_find_button" android:layout_height="fill_parent" android:src="@drawable/btn_close" android:contentDescription="@string/close" style="@style/ToolbarButton" />
+</LinearLayout>
